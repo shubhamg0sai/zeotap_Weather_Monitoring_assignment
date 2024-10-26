@@ -68,7 +68,7 @@ weather-monitoring/
     ```bash
    git clone https://github.com/shubhamg0sai/zeotap_Weather_Monitoring_assignment.git
    cd zeotap_Weather_Monitoring_assignment
-   cd weather-monitoring
+   cd weather_monitoring
    ```
 2. **Install Dependenciest**:
    ```bash
