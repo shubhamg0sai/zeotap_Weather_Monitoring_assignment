@@ -1,0 +1,60 @@
+.weather-forecast {
+    background: #f0f4ff; /* Light blue background for forecast section */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px;
+    margin: 15px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.forecast-title {
+    font-size: 1.8em; /* Larger title font size */
+    color: #2196f3; /* Blue color for title */
+    margin-bottom: 15px; /* Space below title */
+}
+
+.forecast-items {
+    display: flex;
+    flex-wrap: wrap; /* Wrap items to the next line if needed */
+    gap: 15px; /* Space between forecast cards */
+}
+
+.forecast-card {
+    background: #ffffff; /* White background for individual forecast cards */
+    border-radius: 8px; /* Slightly smaller radius than parent */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 15px;
+    flex: 1 1 calc(33% - 15px); /* Responsive width */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transition for hover effects */
+}
+
+.forecast-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+.forecast-date {
+    font-size: 1.1em; /* Medium font size for date */
+    margin-bottom: 10px; /* Space below date */
+    color: #666; /* Gray color for date text */
+}
+
+.temperature {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space between items */
+}
+
+.temp {
+    font-size: 2em; /* Large font size for temperature */
+    color: #f57c00; /* Orange color for temperature */
+}
+
+.condition-icon {
+    font-size: 1.5em; /* Larger icon size */
+    margin-left: 5px; /* Space between temperature and icon */
+}
+
+.forecast-condition {
+    font-size: 1.2em; /* Slightly larger font for condition */
+    color: #333; /* Dark color for condition text */
+}

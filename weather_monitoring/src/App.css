@@ -1,0 +1,223 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.App {
+    text-align: center;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.weather-summary {
+    background: #e3f2fd; /* Light blue background */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px;
+    margin: 15px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transition for hover effects */
+}
+
+.weather-summary:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+.city-name {
+    font-size: 1.8em; /* Larger title font size */
+    color: #2196f3; /* Blue color for city name */
+    margin-bottom: 10px; /* Space below city name */
+}
+
+.summary-details {
+    display: flex;
+    flex-direction: column; /* Stack details vertically */
+}
+
+.average-temp, .max-temp, .min-temp, .dominant-condition {
+    font-size: 1.1em; /* Medium font size for details */
+    margin: 5px 0; /* Space between details */
+}
+
+.average-temp {
+    color: #f57c00; /* Orange color for average temperature */
+}
+
+.max-temp {
+    color: #c62828; /* Red color for max temperature */
+}
+
+.min-temp {
+    color: #1976d2; /* Blue color for min temperature */
+}
+
+.dominant-condition {
+    font-weight: bold; /* Bold font for dominant condition */
+}
+
+@media (max-width: 600px) {
+    .weather-summary, .alert {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+.weather-forecast {
+    background: #f0f4ff; /* Light blue background for forecast section */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px;
+    margin: 15px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.forecast-title {
+    font-size: 1.8em; /* Larger title font size */
+    color: #2196f3; /* Blue color for title */
+    margin-bottom: 15px; /* Space below title */
+}
+
+.forecast-items {
+    display: flex;
+    flex-wrap: wrap; /* Wrap items to the next line if needed */
+    gap: 15px; /* Space between forecast cards */
+}
+
+.forecast-card {
+    background: #ffffff; /* White background for individual forecast cards */
+    border-radius: 8px; /* Slightly smaller radius than parent */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 15px;
+    flex: 1 1 calc(33% - 15px); /* Responsive width */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transition for hover effects */
+}
+
+.forecast-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+.forecast-date {
+    font-size: 1.1em; /* Medium font size for date */
+    margin-bottom: 10px; /* Space below date */
+    color: #666; /* Gray color for date text */
+}
+
+.temperature {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space between items */
+}
+
+.temp {
+    font-size: 2em; /* Large font size for temperature */
+    color: #f57c00; /* Orange color for temperature */
+}
+
+.condition-icon {
+    font-size: 1.5em; /* Larger icon size */
+    margin-left: 5px; /* Space between temperature and icon */
+}
+
+.forecast-condition {
+    font-size: 1.2em; /* Slightly larger font for condition */
+    color: #333; /* Dark color for condition text */
+}
+
+.weather-trends {
+    background: #f0f4c3; /* Light green background */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px;
+    margin: 15px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transition for hover effects */
+}
+
+.weather-trends:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+.trend-city {
+    font-size: 1.8em; /* Larger title font size */
+    color: #4caf50; /* Green color for city name */
+    margin-bottom: 10px; /* Space below city name */
+}
+
+.average-temp {
+    font-size: 1.2em; /* Medium font size for average temperature */
+    color: #f57c00; /* Orange color for average temperature */
+}
+
+.condition-list {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+}
+
+.condition-item {
+    font-size: 1.1em; /* Medium font size for conditions */
+    margin: 5px 0; /* Space between items */
+    padding: 10px;
+    background: #fff; /* White background for list items */
+    border-radius: 5px; /* Rounded corners for list items */
+    transition: background 0.3s; /* Transition for hover effect */
+}
+
+.condition-item:hover {
+    background: #e1f5fe; /* Light blue background on hover */
+}
+
+.condition-name {
+    font-weight: bold; /* Bold font for condition names */
+    color: #2196f3; /* Blue color for condition names */
+}
+
+.condition-count {
+    color: #757575; /* Grey color for counts */
+}
+
+.alert {
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px; /* Rounded corners */
+    color: #fff; /* White text for readability */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transition for hover effects */
+    display: flex; /* Flexbox for alignment */
+    align-items: center; /* Centering items vertically */
+}
+
+.alert:hover {
+    transform: translateY(-3px); /* Lift effect on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+.alert-info {
+    background-color: #2196F3; /* Blue background for info alerts */
+}
+
+.alert-warning {
+    background-color: #FF9800; /* Orange background for warnings */
+}
+
+.alert-error {
+    background-color: #F44336; /* Red background for errors */
+}
+
+.alert-success {
+    background-color: #4CAF50; /* Green background for success messages */
+}
+
+.alert p {
+    margin: 0; /* Remove default margin */
+    font-size: 1.1em; /* Slightly larger font size */
+    flex-grow: 1; /* Allow text to take available space */
+}
+
+/* Optional icon styles */
+.alert:before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    margin-right: 10px; /* Space between icon and text */
+    background-size: cover; /* Ensure icons fit */
+}
