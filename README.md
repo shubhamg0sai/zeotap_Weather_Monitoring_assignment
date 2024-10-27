@@ -91,3 +91,8 @@ weather-monitoring/
    npm run build
    ```
    Open your web browser and go to http://127.0.0.1:3000/.
+
+   ## Working:
+
+[![Watch the video](https://raw.githubusercontent.com/shubhamg0sai/zeotap_weather_monitoring_assignment/refs/heads/Delete/weather_monitoring/public/Screenshot%202024-10-27%20113437.png)](https://github.com/shubhamg0sai/zeotap_weather_monitoring_assignment/raw/refs/heads/Delete/weather_monitoring/public/weather_monitoring.mp4)
+
